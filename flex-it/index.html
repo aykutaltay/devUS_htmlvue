@@ -7,7 +7,7 @@
   <meta name="description" content="IT Solutions &amp; Business Services Responsive HTML5 Bootstrap5  Website Template">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- vue -->
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
   <!-- vue -->
 
   <!-- fav icon -->
@@ -49,15 +49,10 @@
 </head>
 
 <body class=" dark-theme ">
-  <div id="app">
+  <!-- Vue Div idir -->
+  <!-- <div id="app"> -->
 
     <!-- test amaçlı vu kullanım yeri globalvue js içerine  bakılması gerekmektedir. -->
-    <h1>{{message}}</h1>
-    <ul>
-      <li v-for="item in ArrayList">
-        {{ item.title }}
-      </li>
-    </ul>
 
     <!-- test amaçlı vu kullanım yeri globalvue js içerine  bakılması gerekmektedir. -->
 
@@ -81,27 +76,35 @@
                 src="assets/images/logo/logo-dark.png" alt="logo" /></a></div>
           <div class="links menu-wrapper ">
             <ul class="list-js links-list">
-              <li class="menu-item has-sub-menu"><a class="menu-link   active" href="#0">home <i
-                    class="fas fa-plus  plus-icon"> </i></a>
-                <ul class="sub-menu ">
+              <li class="menu-item"><a class="menu-link   active" href="#0" id="e_menu_home"></a>
+<!-- başka sayfa olmayacağı için kapatıldı -->
+              <!-- <li class="menu-item has-sub-menu"><a class="menu-link   active" href="#0">{{lang.pg_index.menu_home}} <i
+                    class="fas fa-plus  plus-icon"> </i></a> -->
+
+                  <!-- <ul class="sub-menu ">
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="./">home-1</a></li>
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="home-2.html">home-2</a>
                   </li>
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="home-3.html">home-3</a>
                   </li>
-                </ul>
+                </ul> -->
               </li>
-              <li class="menu-item"><a class="menu-link  " href="about-us.html">about us </a></li>
-              <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">services<i
-                    class="fas fa-plus  plus-icon"> </i></a>
-                <ul class="sub-menu ">
+              <li class="menu-item"><a class="menu-link  " href="about-us.html">{{lang.pg_index.menu_about}} </a></li>
+              <li class="menu-item"><a class="menu-link  " href="#0">{{lang.pg_index.menu_service}}</a>
+<!-- başka sayfa olmayacağı için kapatıldı -->
+              <!-- <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">{{lang.pg_index.menu_service}}<i
+                    class="fas fa-plus  plus-icon"> </i></a> -->
+
+                  <!-- <ul class="sub-menu ">
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  "
                       href="services.html">services</a></li>
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  "
                       href="service-single.html">service single</a></li>
-                </ul>
+                </ul> -->
               </li>
-              <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">portfolio <i
+              <li class="menu-item"><a class="menu-link  " href="portfolio-slider.html">{{lang.pg_index.menu_portfolio}} </a></li>
+<!-- başka sayfa olmayacağı için kapatıldı -->              
+              <!-- <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">portfolio <i
                     class="fas fa-plus  plus-icon"> </i></a>
                 <ul class="sub-menu ">
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  "
@@ -113,8 +116,9 @@
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  "
                       href="portfolio-single.html">portfolio single</a></li>
                 </ul>
-              </li>
-              <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">blog<i class="fas fa-plus  plus-icon">
+              </li> -->
+<!-- başka sayfa olmayacağı için kapatıldı -->              
+              <!-- <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">blog<i class="fas fa-plus  plus-icon">
                   </i></a>
                 <ul class="sub-menu ">
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  "
@@ -126,8 +130,9 @@
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  "
                       href="post-single.html">single post</a></li>
                 </ul>
-              </li>
-              <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">pages<i
+              </li> -->
+<!-- başka sayfa olmayacağı için kapatıldı -->              
+              <!-- <li class="menu-item has-sub-menu"><a class="menu-link  " href="#0">pages<i
                     class="fas fa-plus  plus-icon"> </i></a>
                 <ul class="sub-menu ">
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="pricing.html">pricing
@@ -140,8 +145,8 @@
                   <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="404.html">404 page</a>
                   </li>
                 </ul>
-              </li>
-              <li class="menu-item"><a class="menu-link  " href="contact-us.html">contact us </a></li>
+              </li> -->
+              <li class="menu-item"><a class="menu-link  " href="contact-us.html">{{lang.pg_index.menu_contact}} </a></li>
             </ul>
           </div>
           <div class="controls-box">
@@ -1103,7 +1108,7 @@
     <div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon "></i>
     </div>
 
-  </div>
+  
   <!-- End back-to-top Component-->
 
   <!--     JQuery     -->
@@ -1138,7 +1143,11 @@
 
   <!--     main     -->
   <script src="js/main.js"></script>
-  <script src="js/globalvue.js"></script>
+  <!-- Vue dividir -->
+  <!-- </div> -->
+
+  <!-- <script src="js/globalvue.js"></script> -->
+  <script src="js/globalsite.js"></script>
 
 
 </body>

@@ -7,6 +7,18 @@ createApp({
     return {
       message: "Test Amaçlı Eklenmiştir.",
       ArrayList: [],
+      deneme : "testmetini",
+      lang : {
+        pg_index : {
+          menu_home: "Ana Sayfa",
+          menu_about: "Hakkımızda",
+          menu_service: "Hizmetlerimiz",
+          menu_portfolio: "Portfolio",
+          menu_contact:"Bize Ulaşın"
+
+        },
+      },
+
     };
   },
   created() {
@@ -20,6 +32,8 @@ createApp({
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then((response) => response.json())
         .then((json) => (this.ArrayList = json));
+
+        document.getElementById("e_menu_home").innerText = this.lang.pg_index.menu_home;
     },
   },
 }).mount("#app");
